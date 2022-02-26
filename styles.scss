@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+// GLOBALS //
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #3b4664;
+}
+
+// CALCULATOR //
+.calculator-grid {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  //== OUTPUT STYLES ==//
+  .output {
+    margin: 17px;
+    padding: 30px;
+    background: #181f32;
+    width: 23.5rem;
+    font-weight: 700;
+    font-size: 28px;
+    border-radius: 3px;
+    text-align: right;
+    color: white;
+  }
+
+  //== BUTTONS STYLES ==//
+  .buttons {
+    background-color: #242c3f;
+    padding: 30px;
+
+    button {
+      padding: 10px;
+      border: none;
+      background: #e8e3db;
+      border-radius: 3px;
+      width: 70px;
+      color: #333333;
+      font-size: 19px;
+      box-shadow: 0px 5px 0px #535257;
+      font-weight: 700;
+    }
+
+    .buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 12px;
+      border-radius: 3px;
+
+      .del {
+        color: white;
+        background: #647299;
+        box-shadow: 0px 5px 0px #515f83;
+      }
+    }
+
+    // CONFIG BUTTONS
+    .buttons-footer {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      .button-styles {
+        margin-top: 10px;
+      }
+
+      button {
+        width: 50%;
+      }
+
+      // Reset buttons
+      .reset {
+        color: white;
+        background: #647299;
+        box-shadow: 0px 5px 0px #515f83;
+      }
+
+      // Result button
+      .result {
+        color: white;
+        background: #d13e31;
+        box-shadow: 0px 5px 0px #a32c21;
+      }
+    }
+  }
+}
+
+// FOOTER //
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-size: 15px;
+
+  a {
+    color: rgb(108, 135, 255);
+  }
+}
